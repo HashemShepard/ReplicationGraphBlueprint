@@ -4,6 +4,9 @@ This fork adds support for 4.26-5.0 which are the latest versions of Unreal engi
 the master branch is for UE5.0
 there is a branch for 4.26-4.27
 
+The rep graph BP has to be set to explicitly cook or it doesn't cook for dedicated servers.
+in additional asset directory to cook 
+
 This is an extension of ReplicationGraph plugin introduced in UE 4.20.
 It contains a few blueprint library functions that controls replication graph.
 
@@ -48,6 +51,8 @@ LocusRepGraph.PrintRouting
 ```
 
 ## How to use it.
+
+if you have cook errors The rep graph BP has to be set to explicitly cook or it doesn't cook for dedicated servers, in additional asset directory to cook. 
 
 After installation, open up created blueprint class.
 In Class default details, there are some settings that you may customize to fit your own game.  
